@@ -5,7 +5,7 @@ FROM continuumio/miniconda3
 RUN conda update -n base -c defaults conda -y
 
 # 必要なパッケージのインストール
-RUN conda install -c conda-forge geopandas pandas matplotlib numpy scipy jupyterlab folium plotnine jupyterlab-language-pack-ja-JP -y
+RUN conda install -c conda-forge geopandas scipy  matplotlib plotnine jupyterlab jupyterlab-language-pack-ja-JP -y
 
 # ロケール設定とフォントのインストール
 RUN apt-get update && \
